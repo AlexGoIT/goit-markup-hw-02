@@ -9,9 +9,10 @@
 }
 
 body {
-    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-family: Roboto, sans-serif;
     color: var(--navy-blue-color);
     background-color: var(--body-background-color);
+    font-size: 16px;
 }
 
 .list {
@@ -61,8 +62,6 @@ body {
 /*---Links---*/
 .link {
     text-decoration: none;
-    font-style: normal;
-    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
@@ -81,12 +80,17 @@ body {
     color: var(--ocean-color);
 }
 
+.contacts {
+    font-style: normal;
+}
+
 .contact-link {
     color: var(--slate-color);
 }
 
 /*---Buttons---*/
 .btn {
+    font-family: Roboto;
     cursor: pointer;
     font-weight: 500;
     font-size: 16px;
@@ -129,7 +133,6 @@ body {
 }
 
 .card-descript {
-    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--slate-color);
@@ -142,4 +145,22 @@ body {
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+}
+
+.part-title-hidden {
+    opacity: 0;
+}
+
+/*--Sergey Korobka - Part hidden--*/
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
 }
